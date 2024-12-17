@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.card {
+    width: 100px;
+    height: 150px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 24px;
+    line-height: 150px;
+    margin: 20px;
+}
+
+.buttons {
+    margin: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+    color: green;
+}
+
+#score {
+    margin-top: 10px;
+    font-size: 16px;
+    color: blue;
+}
