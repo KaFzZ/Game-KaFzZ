@@ -4,7 +4,7 @@ def get_random_card():
     return random.randint(1, 13)  # Cards from 1 to 13
 
 def play_game():
-    score = 0
+    score = 1
     current_card = get_random_card()
     
     print("Welcome to the Higher or Lower Card Game!")
@@ -24,6 +24,11 @@ def play_game():
         if (guess == 'h' and next_card > current_card) or (guess == 'l' and next_card < current_card):
             print("You guessed right!")
             score += 1
+
+        if guess ==0:
+            print("Kamu Kalah!")
+            break
+            
         else:
             print("You guessed wrong!")
             score = max(0, score - 1)  # Prevent negative score
